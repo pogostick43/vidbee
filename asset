@@ -1,0 +1,182 @@
+</div>
+<div id="new-asset-${assetCount}" class="campaign-section wf-section">
+   <h3 class="grey-heading">Asset ${assetCount}</h3>
+   <label for="Brief-2" class="field-label">Asset type</label>
+   <div id="multiple-selector" class="selector-one">
+      <div class="w-layout-grid grid-3">
+         <label class="row with-desc w-radio">
+            <input type="radio" data-name="type" id="type-fullVideo" name="type-${assetCount}" value="fullVideo" class="w-form-formradioinput radio-button-6 w-radio-input"/><span class="selector-label w-form-label" for="type-fullVideo">Full video 🎥</span>
+            <p class="paragraph-2 selector-desc">Additional full UGC video. 10-60s long, multiple scenes</p>
+            <div class="price"><span class="from-price">from</span> €150</div>
+         </label>
+         <label class="row with-desc w-radio">
+            <input type="radio" data-name="type" id="type-scene" name="type-${assetCount}" value="scene" class="w-form-formradioinput radio-button-6 w-radio-input"/><span class="selector-label w-form-label" for="type-scene">Extra scene 🎬</span>
+            <p class="paragraph-2 selector-desc">An extra hook, CTA or other scene. 2-5s long, one scene.</p>
+            <div class="price">€30</div>
+         </label>
+      </div>
+   </div>
+   <div id="full-video-spec-${assetCount}" style="display:none"class="full-video-spec">
+      <label for="Brief-2" class="field-label">Video category</label>
+      <div id="multiple-selector" class="selector-one">
+         <div class="w-layout-grid grid-3">
+            <label class="row with-desc w-radio">
+               <input type="radio" data-name="category" id="category-testimonial" name="category-${assetCount}" value="testimonial" class="w-form-formradioinput radio-button-6 w-radio-input"/><span class="selector-label w-form-label" for="category-testimonial">Testimonial</span>
+               <p class="paragraph-2 selector-desc no-space">An engaging video where the creator talks about the product and its key benefits</p>
+            </label>
+            <label class="row with-desc w-radio">
+               <input type="radio" data-name="category" id="category-unboxing" name="category-${assetCount}" value="unboxing" class="w-form-formradioinput radio-button-6 w-radio-input"/><span class="selector-label w-form-label" for="category-unboxing">Unboxing</span>
+               <p class="paragraph-2 selector-desc no-space">Showcase what it looks like when the product is received and unboxed</p>
+            </label>
+            <label class="row with-desc w-radio">
+               <input type="radio" data-name="category" id="category-pia" name="category-${assetCount}" value="pia" class="w-form-formradioinput radio-button-6 w-radio-input"/><span class="selector-label w-form-label" for="category-pia">Product in action</span>
+               <p class="paragraph-2 selector-desc no-space">Highlight key features and get footage of when the product is used</p>
+            </label>
+            <label class="row with-desc w-radio">
+               <input type="radio" data-name="category" id="category-review" name="category-${assetCount}" value="review" class="w-form-formradioinput radio-button-6 w-radio-input"/><span class="selector-label w-form-label" for="category-review">Honest review</span>
+               <p class="paragraph-2 selector-desc no-space">A genuine and authentic review of your product that creates trust</p>
+            </label>
+            <label class="row with-desc w-radio">
+               <input type="radio" data-name="category" id="category-howTo" name="category-${assetCount}" value="howTo" class="w-form-formradioinput radio-button-6 w-radio-input"/><span class="selector-label w-form-label" for="category-howTo">How-to</span>
+               <p class="paragraph-2 selector-desc no-space">A problem-solution focused video with a step by step guide</p>
+            </label>
+            <label class="row with-desc w-radio">
+               <input type="radio" data-name="category" id="category-custom" name="category-${assetCount}" value="custom" class="w-form-formradioinput radio-button-6 w-radio-input"/><span class="selector-label w-form-label" for="category-custom">Custom</span>
+               <p class="paragraph-2 selector-desc no-space">Highlight key features and get footage of when the product is used</p>
+            </label>
+         </div>
+      </div>
+      <label for="Brief-2" class="field-label">Length</label>
+      <div id="multiple-selector" class="selector-one">
+         <div class="w-layout-grid grid-4">
+            <label id="w-node-df1f468b-0bbd-3d17-ee73-62e62ed0d17b-3f4c166c" class="row centered w-radio">
+               <input type="radio" data-name="Length 61" id="length-61" name="length-${assetCount}" value="15" class="w-form-formradioinput radio-button-7 w-radio-input"/><img src="https://uploads-ssl.webflow.com/63e3d6bdc65bec4c263a5653/63f49cc7f8f1ed184d84a8bd_quarter.svg" loading="lazy" alt="" class="channel-icon small-icon"/><span class="selector-label label-space w-form-label" for="length-61">15 seconds</span>
+               <div class="price">€150</div>
+            </label>
+            <label id="w-node-df1f468b-0bbd-3d17-ee73-62e62ed0d182-3f4c166c" class="row centered w-radio">
+               <input type="radio" data-name="Length 61" id="length-61" name="length-${assetCount}" value="30" class="w-form-formradioinput radio-button-7 w-radio-input"/><img src="https://uploads-ssl.webflow.com/63e3d6bdc65bec4c263a5653/63f49cd7992c92749c2a5dda_half.svg" loading="lazy" alt="" class="channel-icon small-icon"/><span class="selector-label label-space w-form-label" for="length-61">30 seconds</span>
+               <div class="price">€200</div>
+            </label>
+            <label id="w-node-df1f468b-0bbd-3d17-ee73-62e62ed0d189-3f4c166c" class="row centered w-radio">
+               <input type="radio" data-name="Length 61" id="length-61" name="length-${assetCount}" value="60" class="w-form-formradioinput radio-button-7 w-radio-input"/><img src="https://uploads-ssl.webflow.com/63e3d6bdc65bec4c263a5653/63f49820b3d84f35b8a88f09_full.svg" loading="lazy" alt="" class="channel-icon small-icon"/><span class="selector-label label-space w-form-label" for="length-61">60 seconds</span>
+               <div class="price">€250</div>
+            </label>
+         </div>
+      </div>
+      <label for="Brief-2" class="field-label">Delivery format</label>
+      <div id="multiple-selector" class="selector-one">
+         <div class="w-layout-grid grid-3">
+            <label id="w-node-df1f468b-0bbd-3d17-ee73-62e62ed0d194-3f4c166c" class="row centered w-radio">
+               <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button-4 w-radio-input"></div>
+               <input type="radio" id="delivery-raw" name="delivery" value="raw" data-name="delivery-${assetCount}" style="opacity:0;position:absolute;z-index:-1"/><span class="selector-label w-form-label" for="delivery-raw">Raw footage<strong></strong></span>
+               <div class="tiny-text">Unedited content</div>
+               <div class="price">+ 0€</div>
+            </label>
+            <label id="w-node-df1f468b-0bbd-3d17-ee73-62e62ed0d19e-3f4c166c" class="row centered w-radio">
+               <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button-3 w-radio-input"></div>
+               <input type="radio" id="delivery-edited" name="delivery" value="edited" data-name="delivery-${assetCount}" style="opacity:0;position:absolute;z-index:-1"/><span class="selector-label w-form-label" for="delivery-edited">Edited &amp; ready to publish<strong></strong></span>
+               <div class="tiny-text">+Raw footage included</div>
+               <div class="price">+ 20€</div>
+            </label>
+         </div>
+      </div>
+      <label for="Brief-2" class="field-label">Target platform</label>
+      <div id="multiple-selector" class="selector-one">
+         <div class="w-layout-grid grid-6">
+            <label id="w-node-df1f468b-0bbd-3d17-ee73-62e62ed0d1ac-3f4c166c" class="row channel w-radio">
+               <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button-4 w-radio-input"></div>
+               <input type="radio" id="channel-facebook" name="channel" value="facebook" data-name="channel-${assetCount}" style="opacity:0;position:absolute;z-index:-1"/><img src="https://uploads-ssl.webflow.com/63e3d6bdc65bec4c263a5653/63e3d6bec65bec00bc3a57a1_facebook.svg" loading="lazy" alt="" class="channel-icon"/><span class="selector-label w-form-label" for="channel-facebook">Facebook<a href="https://emojipedia.org/movie-camera/" class="link-4"></a></span>
+            </label>
+            <label id="w-node-df1f468b-0bbd-3d17-ee73-62e62ed0d1b3-3f4c166c" class="row channel w-radio">
+               <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button-4 w-radio-input"></div>
+               <input type="radio" id="channel-instagram" name="channel" value="instagram" data-name="channel-${assetCount}" style="opacity:0;position:absolute;z-index:-1"/><img src="https://uploads-ssl.webflow.com/63e3d6bdc65bec4c263a5653/63e3d6bec65bec74b63a57c6_instagram.svg" loading="lazy" alt="" class="channel-icon"/><span class="selector-label w-form-label" for="channel-instagram">Instagram<a href="https://emojipedia.org/movie-camera/"></a></span>
+            </label>
+            <label id="w-node-df1f468b-0bbd-3d17-ee73-62e62ed0d1ba-3f4c166c" class="row channel w-radio">
+               <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button-4 w-radio-input"></div>
+               <input type="radio" id="channel-youtube" name="channel" value="youtube" data-name="channel-${assetCount}" style="opacity:0;position:absolute;z-index:-1"/><img src="https://uploads-ssl.webflow.com/63e3d6bdc65bec4c263a5653/63e3d6bec65bec307a3a584f_youtube.svg" loading="lazy" alt="" class="channel-icon"/><span class="selector-label w-form-label" for="channel-youtube">YouTube<a href="https://emojipedia.org/movie-camera/"></a></span>
+            </label>
+         </div>
+      </div>
+      <label for="Brief-2" class="field-label">Dimensions</label>
+      <div id="multiple-selector" class="selector-one">
+         <div class="w-layout-grid grid-4">
+            <label id="w-node-df1f468b-0bbd-3d17-ee73-62e62ed0d1c5-3f4c166c" class="row w-radio">
+               <img src="https://uploads-ssl.webflow.com/63e3d6bdc65bec4c263a5653/63f3f6d39c54bf26f2c3cebb_916.png" loading="lazy" sizes="(max-width: 479px) 71vw, (max-width: 767px) 78vw, (max-width: 991px) 76vw, (max-width: 1279px) 62vw, 790.434814453125px" srcset="https://uploads-ssl.webflow.com/63e3d6bdc65bec4c263a5653/63f3f6d39c54bf26f2c3cebb_916-p-500.png 500w, https://uploads-ssl.webflow.com/63e3d6bdc65bec4c263a5653/63f3f6d39c54bf26f2c3cebb_916.png 500w" alt="" class="channel-icon ratio-image"/><input type="radio" data-name="Ratio 917" id="ratio-917" name="Ratio-${assetCount}" value="916" class="w-form-formradioinput radio-button-8 w-radio-input"/><span class="selector-label w-form-label" for="ratio-917">9:16</span>
+               <div id="w-node-df1f468b-0bbd-3d17-ee73-62e62ed0d1ca-3f4c166c" class="tiny-text">Stories, Reels &amp; TikTok</div>
+            </label>
+            <label id="w-node-df1f468b-0bbd-3d17-ee73-62e62ed0d1cc-3f4c166c" class="row w-radio">
+               <img src="https://uploads-ssl.webflow.com/63e3d6bdc65bec4c263a5653/63f3f7c47df68f8a572bbf5a_45.png" loading="lazy" sizes="(max-width: 479px) 71vw, (max-width: 767px) 78vw, (max-width: 991px) 76vw, (max-width: 1279px) 62vw, 790.434814453125px" srcset="https://uploads-ssl.webflow.com/63e3d6bdc65bec4c263a5653/63f3f7c47df68f8a572bbf5a_45-p-500.png 500w, https://uploads-ssl.webflow.com/63e3d6bdc65bec4c263a5653/63f3f7c47df68f8a572bbf5a_45.png 500w" alt="" class="channel-icon ratio-image"/><input type="radio" data-name="Ratio 917" id="ratio-917" name="Ratio-${assetCount}" value="45" class="w-form-formradioinput radio-button-8 w-radio-input"/><span class="selector-label w-form-label" for="ratio-917">4:5</span>
+               <div id="w-node-df1f468b-0bbd-3d17-ee73-62e62ed0d1d1-3f4c166c" class="tiny-text">IG &amp; FB feed</div>
+            </label>
+            <label id="w-node-df1f468b-0bbd-3d17-ee73-62e62ed0d1d3-3f4c166c" class="row w-radio">
+               <img src="https://uploads-ssl.webflow.com/63e3d6bdc65bec4c263a5653/63f3f94f596f1af043f69917_11.png" loading="lazy" sizes="(max-width: 479px) 71vw, (max-width: 767px) 78vw, (max-width: 991px) 76vw, (max-width: 1279px) 62vw, 790.434814453125px" srcset="https://uploads-ssl.webflow.com/63e3d6bdc65bec4c263a5653/63f3f94f596f1af043f69917_11-p-500.png 500w, https://uploads-ssl.webflow.com/63e3d6bdc65bec4c263a5653/63f3f94f596f1af043f69917_11.png 500w" alt="" class="channel-icon ratio-image"/><input type="radio" data-name="Ratio 917" id="ratio-917" name="Ratio-${assetCount}" value="11" class="w-form-formradioinput radio-button-8 w-radio-input"/><span class="selector-label w-form-label" for="ratio-917">1:1</span>
+               <div id="w-node-df1f468b-0bbd-3d17-ee73-62e62ed0d1d8-3f4c166c" class="tiny-text">Square. IG &amp; FB feed.</div>
+            </label>
+            <label id="w-node-df1f468b-0bbd-3d17-ee73-62e62ed0d1da-3f4c166c" class="row w-radio">
+               <img src="https://uploads-ssl.webflow.com/63e3d6bdc65bec4c263a5653/63f3f9e7ba0c7677acc03bdc_169.png" loading="lazy" sizes="(max-width: 479px) 71vw, (max-width: 767px) 78vw, (max-width: 991px) 76vw, (max-width: 1279px) 62vw, 790.434814453125px" srcset="https://uploads-ssl.webflow.com/63e3d6bdc65bec4c263a5653/63f3f9e7ba0c7677acc03bdc_169-p-500.png 500w, https://uploads-ssl.webflow.com/63e3d6bdc65bec4c263a5653/63f3f9e7ba0c7677acc03bdc_169.png 500w" alt="" class="channel-icon ratio-image"/><input type="radio" data-name="Ratio 917" id="ratio-917" name="Ratio-${assetCount}" value="169" class="w-form-formradioinput radio-button-8 w-radio-input"/><span class="selector-label w-form-label" for="ratio-917">16:9</span>
+               <div id="w-node-df1f468b-0bbd-3d17-ee73-62e62ed0d1df-3f4c166c" class="tiny-text">YouTube etc</div>
+            </label>
+         </div>
+      </div>
+      <label for="Brief-2" class="field-label">Languages</label>
+      <div id="multiple-selector" class="selector-one">
+         <div class="w-layout-grid grid-3">
+            <label id="w-node-df1f468b-0bbd-3d17-ee73-62e62ed0d1e5-3f4c166c" class="row w-radio">
+               <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button-4 w-radio-input"></div>
+               <input type="radio" id="lang-english" name="lang-${assetCount}" value="english" data-name="lang-${assetCount}" wized="cInputLang" style="opacity:0;position:absolute;z-index:-1"/><span class="selector-label w-form-label" for="lang-english">English <strong>🇬🇧</strong></span>
+            </label>
+            <label id="w-node-df1f468b-0bbd-3d17-ee73-62e62ed0d1eb-3f4c166c" class="row w-radio">
+               <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button-3 w-radio-input"></div>
+               <input type="radio" id="lang-swedish" name="lang-${assetCount}" value="swedish" data-name="lang" wized="cInputLang" style="opacity:0;position:absolute;z-index:-1"/><span class="selector-label w-form-label" for="lang-swedish">Swedish <strong>🇸🇪</strong></span>
+            </label>
+            <div id="w-node-df1f468b-0bbd-3d17-ee73-62e62ed0d1f1-3f4c166c" class="text-notice">More languages coming soon!</div>
+         </div>
+      </div>
+   </div>
+   <div id="scene-spec-${assetCount}" style="display:none" class="extra-scene-spec">
+      <label for="Brief-2" class="field-label">Extra scene type</label>
+      <div id="multiple-selector" class="selector-one">
+         <div class="w-layout-grid grid-4">
+            <label id="w-node-df1f468b-0bbd-3d17-ee73-62e62ed0d1f8-3f4c166c" class="row w-radio">
+               <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button-4 w-radio-input"></div>
+               <input type="radio" id="scene-hook" name="scene-${assetCount}" value="hook" data-name="scene" style="opacity:0;position:absolute;z-index:-1"/><span class="selector-label w-form-label" for="scene-hook">Hook variaton<strong></strong></span>
+            </label>
+            <label id="w-node-df1f468b-0bbd-3d17-ee73-62e62ed0d1fe-3f4c166c" class="row w-radio">
+               <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button-3 w-radio-input"></div>
+               <input type="radio" id="scene-cta" name="scene-${assetCount}" value="cat" data-name="scene" style="opacity:0;position:absolute;z-index:-1"/><span class="selector-label w-form-label" for="scene-cta">Call to action<strong></strong></span>
+            </label>
+            <label id="w-node-df1f468b-0bbd-3d17-ee73-62e62ed0d204-3f4c166c" class="row w-radio">
+               <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button-3 w-radio-input"></div>
+               <input type="radio" id="scene-broll" name="scene-${assetCount}" value="broll" data-name="scene" style="opacity:0;position:absolute;z-index:-1"/><span class="selector-label w-form-label" for="scene-broll">Extra B-roll<strong></strong></span>
+            </label>
+            <label id="w-node-df1f468b-0bbd-3d17-ee73-62e62ed0d20a-3f4c166c" class="row w-radio">
+               <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button-3 w-radio-input"></div>
+               <input type="radio" id="scene-custom" name="scene-${assetCount}" value="custom" data-name="scene" wized="cInputLang" style="opacity:0;position:absolute;z-index:-1"/><span class="selector-label w-form-label" for="scene-custom">Custom<strong></strong></span>
+            </label>
+         </div>
+      </div>
+   </div>
+   <div class="brief-spec-${assetCount}"><label for="brief-2" class="field-label">Description</label><textarea placeholder="Brief, scenes, lighting, content examples, do&#x27;s/don&#x27;t, B roll" maxlength="5000" id="brief" name="assetBrief-${assetCount}" data-name="assetBrief" class="textarea w-input"></textarea></div>
+</div>
+<div class="w-embed w-script">
+
+<div id="asset-summary" class="campaign-section summary wf-section">
+   <div class="summary-holder">
+      <div class="text-summary">
+         <div id="summary-type" class="text-bold summary">Video type</div>
+         <div class="dot">•</div>
+         <div id="summary-category">Category</div>
+      </div>
+      <div class="text-summary">
+         <div id="summary-format" class="tiny-desc">Video format</div>
+         <div class="tiny-desc comma">,</div>
+         <div id="summary-length" class="tiny-desc">Length</div>
+      </div>
+   </div>
+   <div class="summary-buttons">
+      <div id="summary-delete" class="trash"><img src="https://uploads-ssl.webflow.com/63e3d6bdc65bec4c263a5653/63e3d6bec65bec90013a5a68_trash-2.svg" loading="lazy" alt="" class="image-4"></div>
+      <a id="summary-edit" href="#" class="button button-small button-outline w-button">Edit</a>
+   </div>
+</div>
+
+
