@@ -1,5 +1,14 @@
 //sets the summary for each asset.
 
+function detailsInvisible(sceneContainer){
+  const fullVideoContainer = sceneContainer.getElementsByClassName("full-video-spec")[0];
+  const extraAssetContainer = sceneContainer.getElementsByClassName("extra-scene-spec")[0];
+  const assetDesc = sceneContainer.getElementsByClassName("brief-spec")[0];
+  fullVideoContainer.style.display = "none";
+  extraAssetContainer.style.display = "none";
+  assetDesc.style.display = "none";
+}
+
 function setSummary(sceneContainer){
   const summaryType = sceneContainer.querySelector('.summary-text');
   const summaryCategory = sceneContainer.querySelector('.summary-category');
