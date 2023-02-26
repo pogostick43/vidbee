@@ -50,9 +50,8 @@ fileInput.addEventListener('change', () =>
         {
             const imagePreview = document.createElement('img');
             imagePreview.src = e.target.result;
-            imagePreview.style.maxWidth = '100%';
+            imagePreview.style.objectFit = 'contain';
             previewField.innerHTML = '';
-            //imagePrompt.remove();
             previewField.appendChild(imagePreview);
         };
         reader.readAsDataURL(file);
