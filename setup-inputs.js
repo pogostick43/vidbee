@@ -3,7 +3,7 @@ document.getElementById('numberOfCreators').value = numberOfCreators;
 
 //Set up for every asset. Hide lang box
 function setupInputs(sceneContainer){
-	const langCheckbox = $(sceneContainer).find('input[name="uses-lang"]')[0];
+	const langCheckbox = $(sceneContainer).find('input[name="uses_lang"]')[0];
 	const langField = sceneContainer.getElementsByClassName('lang-selector')[0];
 	const langInputs = $(langField).find('input[type="radio"]');
 	console.log("set list");
