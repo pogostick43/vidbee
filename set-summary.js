@@ -131,6 +131,10 @@ function setSummaryActions(sceneContainer){
     {
         newAssetSecion.style.display = "none";
         summarySection.style.display = "flex";
+
+        //Send data to wized. This will also display and clear any errors.
+        Wized.data.setVariable("assetdata", getAssetData());
+
     });
     //EDIT - ENLARGE
     const editBtn = sceneContainer.querySelector('.edit-btn');
