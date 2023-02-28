@@ -1,4 +1,3 @@
-//display asset error msg
 function highlightMissingInput(assetId, missingFields) {
   var errorDiv = $('#error-message-' + assetId);
   errorDiv.css('display', 'block');
@@ -6,12 +5,11 @@ function highlightMissingInput(assetId, missingFields) {
   errorDiv.find('.error-text').text(errorText);
 }
 
-//clear asset error msg
-function clearMissingInput() {
-  $('div[id^="error-message-"]').hide();
+function clearMissingInput(assetId) {
+  $('div[id="error-message-' + assetId + '"]').hide();
 }
 
-//Check if any asset data is missing
+
 function getMissingAssetFields(input){
   // Validate input data for each asset
   if (input.type === 'fullVideo') {
@@ -63,11 +61,16 @@ function getAssetData() {
 
       inputData[inputName] = inputVal;
     });
-    clearMissingInput();
+    
     var missingFields = getMissingAssetFields(inputData);
+    console.log("MF: "+missingFields);
     if (missingFields.length > 0) {
+        console.log("gonna highlight: "+missingFields +"  id: "+assetId);
         highlightMissingInput(assetId, missingFields);
         isValid = false;
+    }else{
+      console.log("clearing "+assetId);
+      clearMissingInput(assetId);
     }
 
     assetData.push(inputData);
@@ -75,4 +78,5 @@ function getAssetData() {
 
   return [assetData, isValid];
 }
+
 
