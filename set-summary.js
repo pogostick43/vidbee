@@ -1,26 +1,5 @@
-//Asset summary
-
-
-//Helper to setSummary
-function clearInput(sceneContainer)
-{
-    //Remove all highlights
-    const highlights = sceneContainer.getElementsByClassName("highlight");
-    for (let h_i = 0; h_i < highlights.length; h_i++)
-    {
-        let input = highlights[h_i].getElementsByTagName("input")[0]
-        if (!input.name.startsWith('type'))
-        {
-            highlights[h_i].classList.remove("highlight");
-        }
-    }
-    //Clear asset brief
-   	sceneContainer.getElementsByClassName("textarea")[0].value = "";
-}
-
 //Set the states for the asset summary field
-function setSummary(sceneContainer)
-{
+function setSummary(sceneContainer){
     
     const fullVideoContainer = sceneContainer.getElementsByClassName("full-video-spec")[0];
     const extraAssetContainer = sceneContainer.getElementsByClassName("extra-scene-spec")[0];
@@ -57,7 +36,6 @@ function setSummary(sceneContainer)
                         extraAssetContainer.style.display = "none";
                         fullVideoContainer.style.display = "block";
                         assetDesc.style.display = "block";
-                        clearInput(sceneContainer);
                         isFullVideo = true;
                     }
                     else if (selectorInput.value === 'scene')
@@ -65,7 +43,6 @@ function setSummary(sceneContainer)
                         fullVideoContainer.style.display = "none";
                         extraAssetContainer.style.display = "block";
                         assetDesc.style.display = "block";
-                        clearInput(sceneContainer);
                         isFullVideo = false;
                         summaryFormat.innerHTML = "";
                         summaryLength.innerHTML = "";
