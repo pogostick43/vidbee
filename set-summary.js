@@ -126,6 +126,7 @@ function setSummaryActions(sceneContainer){
     {
         sceneContainer.remove();
         updatePrice();
+        Wized.data.setVariable("assetdata", getAssetData());
     });
     //DELETE ASSET PAGE
     const delBtn_asset = sceneContainer.querySelector('.trash-asset');
@@ -133,6 +134,7 @@ function setSummaryActions(sceneContainer){
     {
         sceneContainer.remove();
         updatePrice();
+        Wized.data.setVariable("assetdata", getAssetData());
     });
     //Remove all checked, do not include type
     const checkedBoxes = sceneContainer.getElementsByClassName("row");
