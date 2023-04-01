@@ -31,14 +31,14 @@ function setSummary(sceneContainer){
                 {
                     summaryType.innerHTML = displayText;
                     //set visible
-                    if (selectorInput.value === 'fullVideo')
+                    if (selectorInput.value === 'Full-Video')
                     {
                         extraAssetContainer.style.display = "none";
                         fullVideoContainer.style.display = "block";
                         assetDesc.style.display = "block";
                         isFullVideo = true;
                     }
-                    else if (selectorInput.value === 'scene')
+                    else if (selectorInput.value === 'Scene')
                     {
                         fullVideoContainer.style.display = "none";
                         extraAssetContainer.style.display = "block";
