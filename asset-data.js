@@ -12,7 +12,7 @@ function clearMissingInput(assetId) {
 
 function getMissingAssetFields(input){
   // Validate input data for each asset
-  if (input.type === 'Full Video') {
+  if (input.type === 'Full-Video') {
     var requiredFields = ['category', 'length', 'delivery', 'channel', 'ratio', 'uses_lang', 'brief'];
     if (!input.uses_lang) {
       requiredFields.splice(requiredFields.indexOf('lang'), 1);
