@@ -1,5 +1,3 @@
-//set initial value, number of creators
-document.getElementById('numberOfCreators').value = numberOfCreators;
 
 //Set up for every asset. Hide lang box
 function setupInputs(sceneContainer){
