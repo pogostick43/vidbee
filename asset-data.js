@@ -19,7 +19,7 @@ function getMissingAssetFields(input){
       input.lang = '';
     }
   } else if (input.type === 'Scene') {
-    var requiredFields = ['category', 'ratio', brief'];
+    var requiredFields = ['category', 'ratio', 'brief'];
   } else {
     console.log('Invalid asset type: ' + input.type);
     return ['Type'];
