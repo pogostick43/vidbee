@@ -24,14 +24,6 @@ function setupInputs(sceneContainer){
 	        langField.style.display = 'none';
 	    }
 	});
-	//Fix text area new row
-	$('textarea').on('keydown', function(e) {
-	    if (e.keyCode === 13) {
-		e.preventDefault();
-		var content = $(this).val();
-		$(this).val(content + '\n');
-	    }
-	});
 }
 
 //Set up age range once. Hide it.
