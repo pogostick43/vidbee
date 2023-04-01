@@ -25,17 +25,12 @@ function setupInputs(sceneContainer){
 	    }
 	});
 	//Fix text area new row
-	$(document).ready(function()
-	{
-	    $('#assetBrief').on('keydown', function(e)
-	    {
-	        if (e.keyCode === 13)
-	        {
-	            e.preventDefault();
-	            var content = $(this).val();
-	            $(this).val(content + '\n');
-	        }
-	    });
+	$('textarea').on('keydown', function(e) {
+	    if (e.keyCode === 13) {
+		e.preventDefault();
+		var content = $(this).val();
+		$(this).val(content + '\n');
+	    }
 	});
 }
 
