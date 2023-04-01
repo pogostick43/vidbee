@@ -110,7 +110,7 @@ function setSummaryActions(sceneContainer){
         summarySection.style.display = "flex";
 
         //Send data to wized. This will also display and clear any errors.
-        Wized.data.setVariable("assetdata", getAssetData());
+        Wized.data.setVariable("assetdata", getAssetData()[0]);
 
     });
     //EDIT - ENLARGE
