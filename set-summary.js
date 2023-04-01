@@ -54,10 +54,7 @@ function setSummary(sceneContainer){
             {
                 selectorInput.addEventListener("click", function()
                 {
-                    if (isFullVideo)
-                    {
-                        summaryCategory.innerHTML = displayText;
-                    }
+                    summaryCategory.innerHTML = displayText;
                 })
             }
             //Format
@@ -79,17 +76,6 @@ function setSummary(sceneContainer){
                     if (isFullVideo)
                     {
                         summaryLength.innerHTML = displayText;
-                    }
-                })
-            }
-            //scene type
-            else if (selectorInput.name.startsWith('scene'))
-            {
-                selectorInput.addEventListener("click", function()
-                {
-                    if (!isFullVideo)
-                    {
-                        summaryCategory.innerHTML = displayText;
                     }
                 })
             }
