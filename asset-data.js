@@ -12,13 +12,13 @@ function clearMissingInput(assetId) {
 
 function getMissingAssetFields(input){
   // Validate input data for each asset
-  if (input.type === 'fullVideo') {
+  if (input.type === 'Full Video') {
     var requiredFields = ['category', 'length', 'delivery', 'channel', 'ratio', 'uses_lang', 'brief'];
     if (!input.uses_lang) {
       requiredFields.splice(requiredFields.indexOf('lang'), 1);
       input.lang = '';
     }
-  } else if (input.type === 'scene') {
+  } else if (input.type === 'Scene') {
     var requiredFields = ['scene', 'brief'];
   } else {
     console.log('Invalid asset type: ' + input.type);
