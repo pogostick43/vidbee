@@ -8,6 +8,8 @@ function setTextAreaText(assetDesc, isFullVideo){
   }
 }
 
+var currentTypeSelected = "none";
+
 function setSummary(sceneContainer){
     
     const fullVideoContainer = sceneContainer.getElementsByClassName("full-video-spec")[0];
@@ -46,7 +48,11 @@ function setSummary(sceneContainer){
                         fullVideoContainer.style.display = "block";
                         assetDesc.style.display = "block";
                         isFullVideo = true;
-                        setTextAreaText(assetDesc, isFullVideo);
+                        if(currentTypeSelected !== selectorInput.value){
+                          setTextAreaText(assetDesc, isFullVideo);
+                        }
+                        currentTypeSelected = selectorInput.value;
+                        
                     }
                     else if (selectorInput.value === 'Scene')
                     {
@@ -54,7 +60,10 @@ function setSummary(sceneContainer){
                         extraAssetContainer.style.display = "block";
                         assetDesc.style.display = "block";                        
                         isFullVideo = false;
-                        setTextAreaText(assetDesc, isFullVideo);
+                        if(currentTypeSelected !== selectorInput.value){
+                          setTextAreaText(assetDesc, isFullVideo);
+                        }
+                        currentTypeSelected = selectorInput.value;
                         summaryFormat.innerHTML = "";
                         summaryLength.innerHTML = "";
                     }
