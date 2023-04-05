@@ -1,6 +1,6 @@
 function setTextAreaText(assetDesc, isFullVideo){
   var text = assetDesc.querySelectorAll('[name^="brief-"]')[0].value;
-  var textUnchanged = /*text==fullVideoText || text==sceneText ||*/ text=="";
+  var textUnchanged = true; //text==fullVideoText || text==sceneText || text=="";
   if(textUnchanged && isFullVideo){
   	assetDesc.querySelectorAll('[name^="brief-"]')[0].value = fullVideoText;
   }else if(textUnchanged && !isFullVideo){
