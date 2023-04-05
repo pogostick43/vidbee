@@ -1,4 +1,13 @@
-//Set the states for the asset summary field
+function setTextAreaText(assetDesc, isFullVideo){
+  var text = assetDesc.querySelectorAll('[name^="brief-"]')[0].value;
+  var textUnchanged = text==fullVideoText || text==sceneText || text=="";
+  if(textUnchanged && isFullVideo){
+  	assetDesc.querySelectorAll('[name^="brief-"]')[0].value = fullVideoText;
+  }else if(textUnchanged && !isFullVideo){
+    assetDesc.querySelectorAll('[name^="brief-"]')[0].value = sceneText;
+  }
+}
+
 function setSummary(sceneContainer){
     
     const fullVideoContainer = sceneContainer.getElementsByClassName("full-video-spec")[0];
@@ -37,13 +46,15 @@ function setSummary(sceneContainer){
                         fullVideoContainer.style.display = "block";
                         assetDesc.style.display = "block";
                         isFullVideo = true;
+                        setTextAreaText(assetDesc, isFullVideo);
                     }
                     else if (selectorInput.value === 'Scene')
                     {
                         fullVideoContainer.style.display = "none";
                         extraAssetContainer.style.display = "block";
-                        assetDesc.style.display = "block";
+                        assetDesc.style.display = "block";                        
                         isFullVideo = false;
+                        setTextAreaText(assetDesc, isFullVideo);
                         summaryFormat.innerHTML = "";
                         summaryLength.innerHTML = "";
                     }
