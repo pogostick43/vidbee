@@ -1,5 +1,6 @@
 
 //Set up for every asset. Hide lang box
+/*
 function setupInputs(sceneContainer){
 	const langCheckbox = $(sceneContainer).find('input[name="uses_lang"]')[0];
 	const langField = sceneContainer.getElementsByClassName('lang-selector')[0];
@@ -25,6 +26,7 @@ function setupInputs(sceneContainer){
 	    }
 	});
 }
+*/
 
 //Set up age range once. Hide it.
 const allAgesCheckbox = document.getElementById('All-ages-accepted');
