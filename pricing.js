@@ -10,5 +10,6 @@ function updatePrice(){
     });
     //Set number of assets
     document.getElementById("summary-number-assets").innerHTML = document.querySelectorAll("input[name^='type']:checked").length;
+    document.getElementById("summary-asset-price").innerHTML = "€" + totalPrice;
     document.getElementById("summary-total-price").innerHTML = "€" + totalPrice * numberOfCreators;
 }
