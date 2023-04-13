@@ -30,6 +30,7 @@ const subtractCreatorButton = document.getElementById("subtract-creator");
 const addCreatorButton = document.getElementById("add-creator");
 const creatorWarning = document.getElementById("number-of-creators-warning");
 const numberOfCreatorsInput = document.getElementById("numberOfCreators");
+const summaryNumberCreators = document.getElementById("summary-number-creators");
 
 numberOfCreatorsInput.value = numberOfCreators; //Is defined in webflow new-tasks embedded code
 
