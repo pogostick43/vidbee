@@ -1,32 +1,4 @@
-
-//Set up for every asset. Hide lang box
-/*
-function setupInputs(sceneContainer){
-	const langCheckbox = $(sceneContainer).find('input[name="uses_lang"]')[0];
-	const langField = sceneContainer.getElementsByClassName('lang-selector')[0];
-	const langInputs = $(langField).find('input[type="radio"]');
-	console.log("set list");
-	// Add a change event listener to the checkbox
-	langCheckbox.addEventListener('change', function()
-	{
-	    //clean the inputs
-	    langInputs.each(function()
-	    {
-	        $(this).prop('checked', false);
-	        $(this).parent().removeClass('highlight');
-	    });
-	    // If the checkbox is checked, hide the age range field div; otherwise, show it
-	    if (langCheckbox.checked)
-	    {
-	        langField.style.display = 'flex';
-	    }
-	    else
-	    {
-	        langField.style.display = 'none';
-	    }
-	});
-}
-*/
+//This file exists to set up the new-tasks in the inital state and support with functionality for buttons etc
 
 //Set up age range once. Hide it.
 const allAgesCheckbox = document.getElementById('All-ages-accepted');
@@ -42,4 +14,55 @@ allAgesCheckbox.addEventListener('change', function()
     else{
         ageRangeField.style.display = 'flex';
     }
+});
+
+//Show "Warning/upsell-prompt" if less than 3 creators
+function showHideCreatorWarning(){
+  if(numberOfCreators < 3){
+   creatorWarning.style.display = "inline-block";
+  }else{
+   creatorWarning.style.display = "none";
+  }
+}
+
+//num creators button functionality
+const subtractCreatorButton = document.getElementById("subtract-creator");
+const addCreatorButton = document.getElementById("add-creator");
+const creatorWarning = document.getElementById("number-of-creators-warning");
+
+numberOfCreatorsInput.value = numberOfCreators; //Is defined in webflow new-tasks embedded code
+
+subtractCreatorButton.addEventListener("click", () => {
+  if (numberOfCreators > 1) {
+    numberOfCreators--;
+    numberOfCreatorsInput.value = numberOfCreators;
+    summaryNumberCreators.innerHTML = numberOfCreators;
+    updatePrice();
+
+    // trigger input event
+    const event = new InputEvent('input');
+    numberOfCreatorsInput.dispatchEvent(event);
+  }
+  showHideCreatorWarning();
+});
+
+//Add & subtract creator buttons
+addCreatorButton.addEventListener("click", () => {
+  numberOfCreators++;
+  numberOfCreatorsInput.value = numberOfCreators;
+  summaryNumberCreators.innerHTML = numberOfCreators;
+  updatePrice();
+  showHideCreatorWarning();
+
+  // trigger input event
+  const event = new InputEvent('input');
+  numberOfCreatorsInput.dispatchEvent(event);
+});
+
+//Also listen for input of if the number of creators is "manually" changed
+numberOfCreatorsInput.addEventListener("input", () => {
+  numberOfCreators = parseInt(numberOfCreatorsInput.value);
+  summaryNumberCreators.innerHTML = numberOfCreators;
+  updatePrice();
+  showHideCreatorWarning();
 });
